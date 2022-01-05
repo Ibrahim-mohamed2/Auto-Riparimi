@@ -1,0 +1,140 @@
+body
+{
+    background-color: #eee;
+}
+/* start landing */
+.landing
+{
+  background-image: url(../images/blog1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+}
+.landing .info
+{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+.landing .info a
+{
+  color: rgb(209, 201, 201);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.landing .info a:hover
+{
+  color: red;
+}
+.landing .info h2
+{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+@media (max-width:768px) {
+  .landing .info h2
+  {
+    font-size: 30px;
+  }
+}
+
+/* end landing */
+
+/* start contact */
+.contact .container
+{
+  margin-top: 100px;
+  background-color: white;
+}
+.contact .container .info
+{
+  padding: 10px;
+}
+.contact .container .info h2
+{
+text-transform: capitalize;
+
+}
+.contact .container .info p
+{
+  color: rgb(163, 160, 160);
+}
+.contact .container .address ul
+{
+}
+.contact .container .address li
+{
+display: inline-block;
+  padding: 5px;
+margin: 10px;
+text-transform: capitalize;
+}
+.contact .container .address li span
+{
+  color: rgb(148, 145, 145);
+}
+.contact .container .address li a
+{
+  text-decoration: none;
+  color: red;
+}
+.contact .container .h
+{
+  margin: 10px;
+}
+.contact .container .h .col-lg-4
+{
+  margin: 10px;
+}
+.contact .container .form-floating
+{
+  margin-bottom: 10px;
+}
+.contact .container .b
+{
+  border: none;
+  color: red;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: capitalize ;
+}
+.contact .container .b:focus
+{
+  outline: none;
+}
+.contact .container h4
+{
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.contact .container .icons ul li
+{
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.contact .container .icons ul li a
+{
+  color: red;
+  text-decoration: none;
+}
+
+  #map {
+    height: 100%;
+  }
+  html, body {
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+/* end contact */

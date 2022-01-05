@@ -1,0 +1,814 @@
+
+
+
+:root {
+  --color: #e02f33;
+}
+/* start to top  */
+.ntb
+{
+  border: 2px solid #1a508b;
+    color: white;
+    background-color: #1a508b;
+    bottom: 3%;
+    position: fixed;
+    transition: .3s;
+    right: 1%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    z-index: 10;
+    
+}
+.ntb i
+{
+  font-size: 20px;
+}
+/* end to top */
+/* start header */
+.Header
+{
+  padding: 7px;
+}
+.Header .col-sm-3 i
+{
+  color: red;
+}
+.Header .col-sm-4 i
+{
+  color: red;
+}
+
+
+.Header .col-sm-2 i
+{
+  color: red;
+  background-color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* end header */
+
+/* start navbar */
+
+.navf {
+  height: 90px;
+  
+}
+.navf .navbar-brand i
+{
+  font-size: 40px;
+  
+}
+.navf .navbar-brand i:hover
+{
+  color: red;
+}
+.navf ul li {
+  margin-top: -15px;
+}
+
+.navf ul li a {
+  color: #fff !important;
+  font-size: 22px;
+  
+}
+
+.navf ul li a:hover {
+  color: var(--color) !important;
+}
+
+.navf span:hover {
+  color: #fff !important;
+} 
+
+.navbar .navbar-toggler-icon
+{
+  color: white !important;
+}
+/* end navbar */
+
+/* start landing */
+.landing
+{
+  background-image: url(../images/slider1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+.landing .info
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.landing .info a
+{
+  color: rgb(209, 201, 201);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.landing .info a:hover
+{
+  color: red;
+}
+.landing .info h2
+{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+/* end landing */
+
+/* start about details */
+.about-deta
+{
+  padding-bottom: 50px;
+}
+.about-deta img
+{
+max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110%;
+}
+.about-deta .ac
+{
+  padding: 25px;
+}
+.about-deta .ac span
+{
+  color: red;
+  font-weight: bold;
+}
+.about-deta .ac h4
+{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about-deta .ac p
+{
+  color: rgb(161, 159, 159);
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.about-deta .ac button
+{
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding:10px 20px;
+  text-transform: uppercase;
+}
+
+ 
+
+/* end about details */
+
+/* start an appointment */
+.appointment {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #f0f0f0;
+  margin-top: 50px;
+  transition: 3s;
+}
+.appointment .info {
+  display: block;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.appointment .info p {
+  color: red;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.appointment .info h5 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+@media (max-width: 552px) {
+  .appointment .info h5 {
+    font-size: 30px;
+  }
+}
+
+.appointment .services {
+  padding: 30px;
+}
+.appointment .services .icon {
+  position: relative;
+  margin-bottom: 40px;
+}
+.appointment .services .icon i {
+  background-color: white;
+  padding: 40px;
+  font-size: 30px;
+  color: red;
+
+  cursor: auto;
+}
+.appointment .services .icon i:hover {
+  background-color: #1a508b;
+  color: white;
+}
+.appointment .services .icon i.two {
+  background-color: #1a508b;
+  color: white;
+}
+.appointment .services .icon i.one::after {
+  content: "01";
+  position: absolute;
+  top: 0;
+  background-color: var(--color);
+  color: white;
+  font-size: 20px;
+  padding: 6px;
+  right: 80px;
+}
+.appointment .services .icon i.two::after {
+  content: "02";
+  position: absolute;
+  top: 0;
+  background-color: var(--color);
+  color: white;
+  font-size: 20px;
+  padding: 6px;
+  right: 80px;
+}
+.appointment .services .icon i.three::after {
+  content: "03";
+  position: absolute;
+  top: 0;
+  background-color: var(--color);
+  color: white;
+  font-size: 20px;
+  padding: 6px;
+  right: 80px;
+}
+@media (max-width: 768px) {
+  .appointment .services .icon i.one::after,
+  .appointment .services .icon i.two::after,
+  .appointment .services .icon i.three::after {
+    top: 0;
+    right: 160px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1999px) {
+  .appointment .services .icon i.one::after,
+  .appointment .services .icon i.two::after,
+  .appointment .services .icon i.three::after {
+    right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .appointment .services .icon i.one::after,
+  .appointment .services .icon i.two::after,
+  .appointment .services .icon i.three::after {
+    right: 80px;
+  }
+}
+
+.appointment .services h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.appointment .services .text {
+  color: rgb(158, 156, 156);
+}
+
+.appointment .btn {
+  display: block;
+  margin-top: 50px;
+}
+.appointment .btn .one {
+  color: white;
+  background-color: red;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.appointment .btn .one:hover {
+  background-color: white;
+  color: red;
+}
+.appointment .btn .one:focus {
+  outline: none;
+}
+.appointment .btn .two {
+  color: white;
+  background-color: #1a508b;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.appointment .btn .two:hover {
+  background-color: white;
+  color: #1a508b;
+}
+.appointment .btn .two:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .appointment .btn .one {
+    display: block;
+    margin: 10px auto;
+  }
+}
+/* end an appointment */
+
+/* start Technical Statistics */
+.technical-statistics {
+  background-color: #f0f0f0;
+  padding-top: 100px;
+  background-image: url(../images/technical\ statics.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition-delay: 0.3s;
+}
+.technical-statistics .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1a508b;
+  opacity: 0.9;
+  position: absolute;
+}
+.technical-statistics h3 {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  z-index: 3;
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 70px;
+}
+.technical-statistics .tec {
+  margin-bottom: 70px;
+}
+.technical-statistics .tec .counter {
+  color: white;
+  position: relative;
+  font-size: 60px;
+  font-weight: bold;
+}
+.technical-statistics .tec span {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+}
+
+/* end Technical Statistics */
+
+/* start expert-mechanic */
+.expert-mechanic {
+  margin-top: 100px;
+  background-color: rgb(253, 251, 251);
+  margin-bottom: 200px;
+  transition-duration: 1s;
+  transition-delay:.5s ;
+}
+.expert-mechanic .info {
+  display: block;
+  text-align: center;
+  margin-bottom: 70px;
+  padding: 20px;
+}
+.expert-mechanic .info p {
+  color: red;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+.expert-mechanic .info h5 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+@media (max-width: 552px) {
+  .expert-mechanic .info h5 {
+    font-size: 30px;
+  }
+}
+.expert-mechanic .card
+{
+    border-radius: 30px;
+    margin-bottom: 20px;
+   
+}
+.expert-mechanic .card.active
+{
+    background-color: red;
+}
+.expert-mechanic .card.active .h6,
+.expert-mechanic .card.active .h5
+{
+    color: white !important;
+}
+.expert-mechanic .card img {
+  border-radius: 50%;
+   border: 2px solid #eee;
+   position: relative;
+   z-index: 22;
+ width: 150px;
+ height: 150px;
+ margin:20px auto;
+ text-align: center;
+  cursor: pointer;
+}
+
+.expert-mechanic .card .card-body .h5
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+.expert-mechanic .card .card-body .h6
+{
+    color: red;
+    margin-bottom: 20px;
+}
+
+.expert-mechanic .card .card-body .list-unstyled li
+{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+}
+.expert-mechanic .card .card-body .list-unstyled li i
+{
+    font-size: 20px;
+}
+.expert-mechanic .card .card-body p
+{
+    color:rgb(190, 187, 187)
+}
+.expert-mechanic .card:hover
+{
+    background-color: red;
+    opacity: .8;
+    color: white;
+}
+.expert-mechanic .card:hover .h6
+{
+    color: white;
+}
+.expert-mechanic .card:hover li
+{
+    background-color: transparent;
+    color: white;
+}
+/* end expert-mechanic */
+
+/* start an happy customer */
+.happy-customer
+{
+  background-color: #eee;
+  margin-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.happy-customer .info
+{
+  display: block;
+  text-align: center;
+}
+.happy-customer .info span
+{
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+ 
+}
+.happy-customer .info h5
+{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.happy-customer .container .icon-info
+{
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+ 
+}
+.happy-customer .container .icon-info:hover
+{
+  background-color: #1a508b;
+ 
+}
+.happy-customer .container .icon-info:hover p
+{
+  color: white;
+}
+.happy-customer .container .icon-info.active{
+  background-color: #1a508b;
+
+}
+.happy-customer .container .icon-info.active p
+{
+  color: white;
+}
+.happy-customer .container .icon-info i
+{
+  font-size: 25px;
+  background-color: #eee;
+  color: red;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  
+}
+.happy-customer .container .icon-info p
+{
+  color: rgb(151, 149, 149);
+}
+.happy-customer .container .img-info img
+{
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  border: 1px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+  float: left;
+}
+.happy-customer .container .img-info .span
+{
+  float:right;
+  width: 60%;
+}
+.happy-customer .container .img-info .span p
+{
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+.happy-customer .container .img-info .span span
+{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.owl-carousel .owl-dots button.active
+{
+  
+  
+  background-color: red;
+  margin-left: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  
+}
+
+.owl-carousel .owl-dots button:focus
+{
+  outline: none;
+}
+
+/* end an happy customer */
+
+/* start footer */
+
+.footer
+{
+  background-image: url(../images/slider1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  position: relative;
+}
+.footer .overlay
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color:black;
+  opacity: .7;
+  
+}
+.footer .one{
+  position: relative;
+  z-index: 333;
+  color: white;
+}
+
+.footer .one .icon i
+{
+  font-size: 40px;
+  background-color:white ;
+  padding: 10px;
+  border-radius: 50%;
+  color: #1a508b;
+}
+.footer .one .icon i:hover{
+  background-color: #1a508b;
+  color: white;
+}
+.footer .one .text h3
+{
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  color: #1a508b;
+  
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.footer .one .text h3:hover
+{
+  color: white;
+  background-color: #1a508b;
+
+}
+.footer .one .text p
+{
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.footer .one .p
+{
+  color: #eee;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.footer .one ul li
+{
+  display: inline-block;
+  padding: 12px;
+  background-color: white;
+  margin: 5px 10px;
+  border-radius: 50%;
+
+}
+
+  
+
+.footer .one ul li:hover 
+{
+  
+  background-color: red;
+}
+.footer .one ul li:hover a i
+{
+  color: white;
+}
+.footer .one ul li a i
+{
+color: red;
+font-size: 35px;
+text-align: center;
+
+}
+.footer .two
+{
+  padding: 20px;
+  position: relative;
+  z-index: 332;
+}
+.footer .two h3
+{
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.footer .two ul li
+{
+  padding: 10px;
+}
+.footer .two ul li i
+{
+  color: white;
+  margin-right: 5px;
+}
+.footer .two ul li  a{
+  color: #aaa6a6;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.footer .two ul li  a:hover
+{
+  color: red;
+}
+.footer .three 
+{
+  padding: 20px;
+}
+.footer .three h3
+{
+ color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px; 
+}
+.footer .three .info{
+  padding: 20px;
+}
+.footer .three .info .icon
+{
+  color: #aaa6a6;
+  margin-bottom: 10px;
+}
+.footer .three .info  a
+{
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-size:22px;
+  font-weight: bold;
+}
+.footer .three .info  a:hover
+{
+  color: red;
+}
+
+.footer .four
+{
+  padding: 20px;
+} 
+.footer .four h3
+{
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 40px; 
+}
+.footer .four .info
+{
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.footer .four .info i
+{
+  color: white;
+  font-size: 15px;
+  margin-right: 15px;
+}
+.footer .four .info span
+{
+  color: #eee;
+  font-size: 15px;
+}
+.footer .four .info a{
+  text-decoration: none;
+  color: #eee;
+}
+
+.footer .made
+{
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.footer .made a
+{
+  color: red;
+  text-decoration: none;
+}
+/* end footer */

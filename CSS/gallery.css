@@ -1,0 +1,108 @@
+
+:root {
+  --color: #e02f33;
+}
+
+/* start landing */
+.landing
+{
+  background-image: url(../images/gallery2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+.landing .info
+{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.landing .info a
+{
+  color: rgb(209, 201, 201);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.landing .info a:hover
+{
+  color: red;
+}
+.landing .info h2
+{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+/* end landing */
+
+/* start gallery */
+.gallery {
+  position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.gallery .phot1,
+.gallery .phot2,
+.gallery .phot3,
+.gallery .phot4 {
+  padding: 0;
+  cursor: pointer;
+  transition-duration: 1s;
+  transition-delay: 0.3s;
+}
+.gallery .img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.gallery .image-resize {
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+.gallery .phot1 i,
+.gallery .phot2 i,
+.gallery .phot3 i,
+.gallery .phot4 i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  background-color: red;
+  padding: 15px;
+  border-radius: 50%;
+  display: none;
+}
+.gallery .phot1 .overlay,
+.gallery .phot2 .overlay,
+.gallery .phot3 .overlay,
+.gallery .phot4 .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  display: none;
+}
+.gallery .phot1:hover i,
+.gallery .phot2:hover i,
+.gallery .phot3:hover i,
+.gallery .phot4:hover i {
+  display: block;
+}
+.gallery .phot1:hover .overlay,
+.gallery .phot2:hover .overlay,
+.gallery .phot3:hover .overlay,
+.gallery .phot4:hover .overlay {
+  display: block;
+}
+/* end gallery */

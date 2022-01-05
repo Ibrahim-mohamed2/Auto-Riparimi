@@ -1,0 +1,258 @@
+body
+{
+    background-color: #eee;
+}
+.ntb
+{
+  border: 2px solid #1a508b;
+    color: white;
+    background-color: #1a508b;
+    bottom: 3%;
+    position: fixed;
+    transition: .3s;
+    right: 1%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    z-index: 10;
+    
+}
+.ntb i
+{
+  font-size: 20px;
+}
+/* start landing */
+.landing
+{
+  background-image: url(../images/blog1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+.landing .info
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.landing .info a
+{
+  color: rgb(209, 201, 201);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.landing .info a:hover
+{
+  color: red;
+}
+.landing .info h2
+{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+/* end landing */
+
+/* start a blog-details */
+
+.blog-details
+{
+margin-top: 120px;
+background-color: #eee;
+}
+.blog-details .left .img-fluid 
+{
+height: 100%;
+background-size: cover;
+width: 100%;
+}
+
+.blog-details .left .card-body ul li
+{
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 6px;
+}
+.blog-details .left .card-body ul li i
+{
+    color: red;
+}
+.blog-details .left .card-body ul li span
+{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(180, 178, 178);
+}
+.blog-details .left .card-body .h
+{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.blog-details .left .card-body .h:hover
+{
+    color: red;
+}
+.blog-details .right .card-body .card-text
+{
+    color: rgb(177, 172, 172);
+    margin-top: 10px;
+}
+.blog-details .left nav .pagination .page-item
+{
+    padding: 5px;
+    font-size: large;
+    font-weight: bold;
+   
+}
+.blog-details .left nav .pagination .page-item a
+{
+    color: red;
+}
+.blog-details .right label
+{
+    font-size: 30px;
+    color: red;
+}
+.blog-details .right h3
+{
+    text-transform:capitalize;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.blog-details .right ul li
+{
+    padding: 10px;
+}
+.blog-details .right ul li i
+{
+    color:red;
+    font-size: 10px;
+    margin-right: 12px;
+}
+.blog-details .right ul li a
+{
+text-decoration: none;
+color: rgb(85, 84, 84);
+text-transform: capitalize;
+
+}
+
+.blog-details .right .img
+{
+    float: left;
+    width: 50%;
+}
+.blog-details .right .img img
+{
+    width: 100px;
+    height: 100px;
+}
+.blog-details .right .info
+{
+    float: right;
+    width: 50%;
+}
+@media (max-width:1200px) {
+    .blog-details .right .img,
+    .blog-details .right .info
+    {
+        float: none;
+        margin-top: 10px;
+    }
+
+}
+@media (max-width:768px)
+{
+.blog-details .right .img img
+{
+    width: 100%;
+    
+}
+}
+.blog-details .right .info .h
+{
+    text-decoration: none;
+    color: rgb(66, 65, 65);
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: bold;
+}
+.blog-details .right .info .h:hover
+{
+    color: red;
+}
+.blog-details .right .info ul li 
+{
+    padding: 0 !important;
+}
+.blog-details .right .info ul li i
+{
+    font-size: 10px;
+}
+.blog-details .right .info ul li  span
+{
+    font-size: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: gray;
+}
+.blog-details .right .ser .img
+{
+    margin-top: 20px;
+}
+.blog-details .tag-cloud
+{
+   
+    display: block;
+    margin:200px auto;
+    padding-top: 200px;
+    margin-bottom: 30px!important;
+}
+@media (max-width:1200px) {
+    .blog-details .tag-cloud
+    {
+        display: block;
+    margin:0px auto;
+    padding-top: 0px;
+ 
+    }
+}
+.blog-details .tag-cloud h3
+{
+     text-transform:capitalize;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.blog-details .tag-cloud .btn
+{
+    background-color: white;
+    color: #1a508b;
+    font-size: 20px;
+    font-weight: bold;
+    border: #eee;
+    margin-bottom: 10px;
+    text-transform:capitalize;
+  
+}
+.blog-details .tag-cloud .btn:focus
+{
+    outline: solid 3px red;
+    background-color: #1a508b;
+    color: white;
+}
+.blog-details p
+{
+    color: gray;
+    margin-bottom: 30px;
+}
+/* end a blog-details */

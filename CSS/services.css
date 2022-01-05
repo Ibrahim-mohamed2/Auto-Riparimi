@@ -1,0 +1,268 @@
+
+:root {
+  --color: #e02f33;
+}
+/* start header */
+.Header
+{
+  padding: 7px;
+}
+.Header .col-sm-3 i
+{
+  color: red;
+}
+.Header .col-sm-4 i
+{
+  color: red;
+}
+
+
+.Header .col-sm-2 i
+{
+  color: red;
+  background-color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* end header */
+
+/* start navbar */
+
+.navf {
+  height: 90px;
+  
+}
+.navf .navbar-brand i
+{
+  font-size: 40px;
+  
+}
+.navf .navbar-brand i:hover
+{
+  color: red;
+}
+.navf ul li {
+  margin-top: -15px;
+}
+
+.navf ul li a {
+  color: #fff !important;
+  font-size: 22px;
+  
+}
+
+.navf ul li a:hover {
+  color: var(--color) !important;
+}
+
+.navf span:hover {
+  color: #fff !important;
+} 
+
+.navbar .navbar-toggler-icon
+{
+  color: white !important;
+}
+/* end navbar */
+
+
+/* start landing */
+.landing
+{
+  background-image: url(../images/gallery3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+position: relative;
+height: 500px;
+}
+.landing .info
+{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.landing .info a
+{
+  color: rgb(209, 201, 201);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.landing .info a:hover
+{
+  color: red;
+}
+.landing .info h2
+{
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+/* end landing */
+
+/* start an appointment */
+.appointment {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #f0f0f0;
+  margin-top: 50px;
+  transition: 3s;
+}
+.appointment .info {
+  display: block;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.appointment .info p {
+  color: red;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.appointment .info h5 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+@media (max-width: 552px) {
+  .appointment .info h5 {
+    font-size: 30px;
+  }
+}
+
+.appointment .services {
+  padding: 30px;
+}
+.appointment .services .icon {
+  position: relative;
+  margin-bottom: 40px;
+}
+.appointment .services .icon i {
+  background-color: white;
+  padding: 40px;
+  font-size: 30px;
+  color: red;
+
+  cursor: auto;
+}
+.appointment .services .icon i:hover {
+  background-color: #1a508b;
+  color: white;
+}
+.appointment .services .icon i.two {
+  background-color: #1a508b;
+  color: white;
+}
+.appointment .services .icon i.one::after {
+  content: "01";
+  position: absolute;
+  top: 0;
+  background-color: var(--color);
+  color: white;
+  font-size: 20px;
+  padding: 6px;
+  right: 80px;
+}
+.appointment .services .icon i.two::after {
+  content: "02";
+  position: absolute;
+  top: 0;
+  background-color: var(--color);
+  color: white;
+  font-size: 20px;
+  padding: 6px;
+  right: 80px;
+}
+.appointment .services .icon i.three::after {
+  content: "03";
+  position: absolute;
+  top: 0;
+  background-color: var(--color);
+  color: white;
+  font-size: 20px;
+  padding: 6px;
+  right: 80px;
+}
+@media (max-width: 768px) {
+  .appointment .services .icon i.one::after,
+  .appointment .services .icon i.two::after,
+  .appointment .services .icon i.three::after {
+    top: 0;
+    right: 160px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1999px) {
+  .appointment .services .icon i.one::after,
+  .appointment .services .icon i.two::after,
+  .appointment .services .icon i.three::after {
+    right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .appointment .services .icon i.one::after,
+  .appointment .services .icon i.two::after,
+  .appointment .services .icon i.three::after {
+    right: 80px;
+  }
+}
+
+.appointment .services h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.appointment .services .text {
+  color: rgb(158, 156, 156);
+}
+
+.appointment .btn {
+  display: block;
+  margin-top: 50px;
+}
+.appointment .btn .one {
+  color: white;
+  background-color: red;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.appointment .btn .one:hover {
+  background-color: white;
+  color: red;
+}
+.appointment .btn .one:focus {
+  outline: none;
+}
+.appointment .btn .two {
+  color: white;
+  background-color: #1a508b;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+.appointment .btn .two:hover {
+  background-color: white;
+  color: #1a508b;
+}
+.appointment .btn .two:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .appointment .btn .one {
+    display: block;
+    margin: 10px auto;
+  }
+}
+/* end an appointment */
